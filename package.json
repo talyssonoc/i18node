@@ -1,0 +1,36 @@
+{
+  "name": "i18node",
+  "version": "0.0.0",
+  "description": "I18n library for node with support for plurals and genders",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "l10n"
+  ],
+  "author": {
+    "name": "talyssonoc",
+    "email": "talyssonoc@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/talyssonoc/i18node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/talyssonoc/i18node/issues"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "mustache": "^0.8.1"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.0",
+    "chai": "^1.9.0",
+    "grunt-mocha-cli": "^1.7.0",
+    "load-grunt-tasks": "^0.4.0",
+    "grunt": "^0.4.4"
+  }
+}

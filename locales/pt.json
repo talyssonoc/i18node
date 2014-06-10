@@ -1,0 +1,30 @@
+{
+	"Hello": "Olá",
+	"World": {
+		"0": "Lugar nenhum",
+		"1": "Mundo",
+		"n": "Mundos"
+	},
+	"Person": {
+		"0": "Ninguém",
+		"1": "1 Pessoa",
+		"n": "{{num}} Pessoas"
+	},
+	"from": {
+		"0": "de",
+		"1": {
+			"neutral": "de",
+			"masc": "do",
+			"fem": "da"
+		},
+		"n": {
+			"neutral": "de", 
+			"masc": "dos",
+			"fem": "das"
+		}
+	},
+	"none": {
+		"neutral": "nenhum",
+		"fem": "nenhuma"
+	}
+}

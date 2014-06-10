@@ -1,0 +1,15 @@
+{
+	"Hello": "Hello",
+	"World": {
+		"0": "Nowhere",
+		"1": "World",
+		"n": "Worlds"
+	},
+	"Person": {
+		"0": "Nobody",
+		"1": "1 Person",
+		"n": "{{num}} People"
+	},
+	"from": "from",
+	"none": "none"
+}
