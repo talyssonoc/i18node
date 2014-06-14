@@ -83,7 +83,7 @@ I18Node.prototype = {
 
 	_translate: function _translate(term, data) {
 		if(this.locales.indexOf(data.locale) === -1) {
-			throw new Error('Locale not found');
+			data.locale = this.defaultLocale
 		}
 
 		term = this._localesData[data.locale][term] || this._localesData[this.defaultLocale][term] || term;
