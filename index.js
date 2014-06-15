@@ -5,14 +5,12 @@ var Mustache = require('mustache'),
 var I18Node = function I18Node(options) {
 	options = options || {};
 
-
 	this.locales = options.locales || ['en'];
 	this.defaultLocale = options.defaultLocale || 'en';
 	this.defaultGender = options.defaultGender || 'neutral';
 	this.path = options.path || path.join(process.cwd(), '/locales');
 
 	this._loadLocales();
-
 };
 
 I18Node.prototype = {
@@ -30,6 +28,10 @@ I18Node.prototype = {
 
 	getGender: function getLocale () {
 		return this.defaultGender;
+	},
+
+	hasLocale: function hasLocale(locale) {
+		return this.locales.indexOf(locale) > -1;
 	},
 
 	i18n: function i18n() {
@@ -112,12 +114,9 @@ I18Node.prototype = {
 
 			return Mustache.render(term, data);
 		}
-
 		return '';
-
 	}
 };
-
 
 
 module.exports = I18Node;
