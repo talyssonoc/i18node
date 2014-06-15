@@ -90,3 +90,12 @@ And let's say that, inside `./locales` folder we have the files:
 * `defaultLocale`: Default: 'en'
 * `defaultGender`: Default: 'neutral'
 * `path`: Path for the locales folder. Default: './locals'
+
+## API
+
+* `setLocale(locale)`: Set the default locale
+* `getLocale()`: Return the current default locale
+* `setGender(gender)`: Set the default gender
+* `getGender()`: Return the current default gender
+* `hasLocale(locale)`: Return if the passed locale is supported
+* `i18n(term, data)`: Return the internationalized term, using the given data

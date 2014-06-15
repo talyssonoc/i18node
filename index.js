@@ -84,16 +84,22 @@ I18Node.prototype = {
 	},
 
 	_translate: function _translate(term, data) {
-		if(this.locales.indexOf(data.locale) === -1) {
+		data.locale = datal.locale.toLowerCase();
+
+		if(!this.hasLocale(data.locale)) {
 			data.locale = this.defaultLocale
 		}
 
-		term = this._localesData[data.locale][term] || this._localesData[this.defaultLocale][term] || term;
+		term = this._localesData[data.locale][term] //Look for the term in the exact locale
+			|| this._localesData[data.locale.split('-')[0]][term] //If didn't found, look for in the locale without the region (e.g. if doesn't have 'en-US', look for 'en')
+			|| this._localesData[this.defaultLocale][term] //If still didn't found, look for in the default locale
+			|| term;
 
 		if(typeof term === 'undefined') {
 			return '';
 		}
 
+		//If already found the term, return it
 		if(_.isString(term)) {
 			return Mustache.render(term, data);
 		}
