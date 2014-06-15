@@ -84,7 +84,7 @@ I18Node.prototype = {
 	},
 
 	_translate: function _translate(term, data) {
-		data.locale = datal.locale.toLowerCase();
+		data.locale = data.locale.toLowerCase();
 
 		if(!this.hasLocale(data.locale)) {
 			data.locale = this.defaultLocale
