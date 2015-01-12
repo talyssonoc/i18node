@@ -1,6 +1,6 @@
 {
   "name": "i18node",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "I18n library for node with support for plurals and genders",
   "main": "index.js",
   "scripts": {
@@ -24,13 +24,15 @@
   },
   "dependencies": {
     "lodash": "^2.4.1",
-    "mustache": "^0.8.1"
+    "mustache": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "^1.18.0",
     "chai": "^1.9.0",
     "grunt-mocha-cli": "^1.7.0",
     "load-grunt-tasks": "^0.4.0",
-    "grunt": "^0.4.4"
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-jscs": "^1.1.0"
   }
 }
