@@ -1,6 +1,6 @@
 {
   "name": "i18node",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "I18n library for node with support for plurals and genders",
   "main": "index.js",
   "scripts": {
