@@ -23,16 +23,16 @@
     "url": "https://github.com/talyssonoc/i18node/issues"
   },
   "dependencies": {
-    "lodash": "^2.4.1",
+    "lodash": "^3.3.1",
     "mustache": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "^1.18.0",
-    "chai": "^1.9.0",
+    "mocha": "^2.1.0",
+    "chai": "^2.1.0",
     "grunt-mocha-cli": "^1.7.0",
-    "load-grunt-tasks": "^0.4.0",
+    "load-grunt-tasks": "^3.1.0",
     "grunt": "^0.4.4",
-    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-jshint": "^0.11.0",
     "grunt-jscs": "^1.1.0"
   }
 }
