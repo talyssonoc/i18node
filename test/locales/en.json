@@ -1,15 +1,34 @@
 {
-	"Hello": "Hello",
-	"World": {
-		"0": "Nowhere",
-		"1": "World",
-		"n": "Worlds"
-	},
-	"Person": {
-		"0": "Nobody",
-		"1": "1 Person",
-		"n": "{{num}} People"
-	},
-	"from": "from",
-	"none": "none"
+  "dev": "development",
+  "greeting": "hello, {{name}}",
+  "human": {
+    "masc": "man",
+    "fem": "woman",
+    "neutral": "person"
+  },
+  "person": {
+    "1": "person",
+    "2": "couple",
+    "n": "people"
+  },
+  "side": {
+    "1": "left",
+    "2": "right"
+  },
+  "nidorino": {
+    "1" : {
+      "masc": "nidorino",
+      "fem": "nidorina",
+      "neutral": "nidorino"
+    },
+    "n" : {
+      "masc": "nidorinos",
+      "fem": "nidorinas",
+      "neutral": "nidorinos"
+    }
+  },
+  "pronoun": {
+    "masc": "he",
+    "fem": "she"
+  }
 }
