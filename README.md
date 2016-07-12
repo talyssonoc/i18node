@@ -2,7 +2,7 @@
 
 TL;DR: It's an i18n package for Node.js, with support to plurals and genders
 
-[![Build Status](https://travis-ci.org/talyssonoc/i18node.svg?branch=master)](https://travis-ci.org/talyssonoc/i18node) [![Dependency manager](https://david-dm.org/talyssonoc/i18node.png)](https://david-dm.org/talyssonoc/i18node)
+[![Build Status](https://travis-ci.org/talyssonoc/i18node.svg?branch=master)](https://travis-ci.org/talyssonoc/i18node) [![Dependency manager](https://david-dm.org/talyssonoc/i18node.png)](https://david-dm.org/talyssonoc/i18node) [![Coverage Status](https://coveralls.io/repos/github/talyssonoc/i18node/badge.svg?branch=master)](https://coveralls.io/github/talyssonoc/i18node?branch=master)
 
 ```sh
 	$ npm install i18node
