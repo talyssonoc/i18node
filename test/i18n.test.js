@@ -3,18 +3,18 @@ var path = require('path');
 var I18N = require('../');
 
 describe('I18Node tests', function() {
-	var i18n;
+  var i18n;
   var availableLocales = ['en', 'pt'];
   var localesPath = path.join(__dirname, 'locales');
 
-	beforeEach(function() {
-		i18n = new I18N({
-			locales: availableLocales,
+  beforeEach(function() {
+    i18n = new I18N({
+      locales: availableLocales,
       defaultLocale: 'en',
       defaultGender: 'neutral',
-			path: localesPath
-		});
-	});
+      path: localesPath
+    });
+  });
 
   describe('#i18n', function() {
     context('when no parameters are sent', function() {
@@ -31,7 +31,7 @@ describe('I18Node tests', function() {
       });
     });
 
-    context("when it doesn't have the searched term", function() {
+    context('when it does not have the searched term', function() {
       context('when no extra arguments are passed', function() {
         it('should return the term itself', function() {
           expect(i18n.i18n('nope')).to.equal('nope');
@@ -172,7 +172,7 @@ describe('I18Node tests', function() {
           context('when default locale has translation for the term', function() {
             it('should use default locale', function() {
               expect(i18n.i18n('dev', { locale: 'es' })).to.equal('development');
-            })
+            });
           });
 
           context('when default locale has no translation for the term', function() {
@@ -183,7 +183,6 @@ describe('I18Node tests', function() {
         });
       });
     });
-
   });
 
   describe('#getLocale', function() {
